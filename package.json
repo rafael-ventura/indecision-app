@@ -1,5 +1,4 @@
 {
-  "homepage": "http://tsydolmir.github.io/indecision-app",
   "name": "indecision-app",
   "version": "1.0.0",
   "main": "index.js",
@@ -9,12 +8,6 @@
     "babel": "^6.23.0",
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
-    "live-server": "^1.2.1",
-    "react-scripts": "3.0.1"
-  },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build"
+    "live-server": "^1.2.1"
   }
 }
