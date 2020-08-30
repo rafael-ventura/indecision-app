@@ -2,10 +2,12 @@
   "name": "indecision-app",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Andrew Mead",
+  "author": "rafael.ventura",
   "license": "MIT",
   "dependencies": {
+    "babel": "^6.23.0",
     "babel-preset-env": "1.5.2",
-    "babel-preset-react": "6.24.1"
+    "babel-preset-react": "6.24.1",
+    "live-server": "^1.2.1"
   }
 }
