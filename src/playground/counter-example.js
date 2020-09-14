@@ -15,7 +15,6 @@ class Counter extends React.Component {
 
       if( !isNaN(count))
       this.setState( () => ({ count }));
-      }
     } catch (e) {
       this.setState( () => ({count : 0}));
     }
