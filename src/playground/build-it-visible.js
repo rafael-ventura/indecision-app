@@ -1,29 +1,24 @@
-
 class VisibilityToggle extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.handletoggleVisibility = this.handletoggleVisibility.bind(this);
+    this.handleToggleVisibility = this.handleToggleVisibility.bind(this);
     this.state = {
-      visibility : false
+      visibility: false
     };
-
   }
-
-  handletoggleVisibility(){
+  handleToggleVisibility() {
     this.setState((prevState) => {
       return {
-        visibility : !prevState.visibility
-      }
+        visibility: !prevState.visibility
+      };
     });
   }
-
   render() {
-    let text = 'Hide Details';
     return (
       <div>
         <h1>Visibility Toggle</h1>
-        <button onClick={this.handletoggleVisibility}> 
-        {this.state.visibility ? 'Hide Details' : 'Show Details'} 
+        <button onClick={this.handleToggleVisibility}>
+          {this.state.visibility ? 'Hide details' : 'Show details'}
         </button>
         {this.state.visibility && (
           <div>
@@ -31,10 +26,8 @@ class VisibilityToggle extends React.Component {
           </div>
         )}
       </div>
-    )
+    );
   }
 }
 
 ReactDOM.render(<VisibilityToggle />, document.getElementById('app'));
-
-
